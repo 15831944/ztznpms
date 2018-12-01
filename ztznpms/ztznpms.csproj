@@ -1,0 +1,1058 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3D217F83-A27A-40DB-B670-334B8A093213}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ztznpms</RootNamespace>
+    <AssemblyName>ztznpms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>951CD74A2FB13DF331A11E8C858451101F9A0D16</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ztznpms_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=5.3.1.0, Culture=neutral, PublicKeyToken=9ec0ff091d04b091, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Words, Version=10.5.0.0, Culture=neutral, PublicKeyToken=fa9a48344f15a022, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Charts, Version=14.1.0.0, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.Schedule, Version=14.1.0.0, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.0, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeRush.Common, Version=15.2.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\dll\DevExpress.CodeRush.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.CodeRush.Core, Version=15.2.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\dll\DevExpress.CodeRush.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.CodeRush.StructuralParser, Version=15.2.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\dll\DevExpress.CodeRush.StructuralParser.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.CodeRush.UserControls, Version=15.2.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\dll\DevExpress.CodeRush.UserControls.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DXCore.Controls.Utils.v6.3, Version=15.2.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\dll\DevExpress.DXCore.Controls.Utils.v6.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DXCore.Controls.XtraBars.v6.3, Version=15.2.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\dll\DevExpress.DXCore.Controls.XtraBars.v6.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DXCore.Controls.XtraEditors.v6.3, Version=15.2.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\dll\DevExpress.DXCore.Controls.XtraEditors.v6.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DXCore.Controls.XtraTreeList.v6.3, Version=15.2.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\dll\DevExpress.DXCore.Controls.XtraTreeList.v6.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DXCore.Controls.XtraVerticalGrid.v6.3, Version=15.2.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\dll\DevExpress.DXCore.Controls.XtraVerticalGrid.v6.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DXCore.Parser, Version=15.2.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\dll\DevExpress.DXCore.Parser.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DXCore.Platform, Version=15.2.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\dll\DevExpress.DXCore.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v15.2.Core, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v15.2.Core, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.SpellChecker.v15.2.Core, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.UI, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.Wizard, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v15.2.Core, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v15.2.Extensions, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpellChecker.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Interop.Excel, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>.\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Office, Version=99.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>.\Interop.Office.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.VBIDE, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>.\Interop.VBIDE.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Vbe.Interop, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="NetWorkLib">
+      <HintPath>..\..\dll\NetWorkLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http">
+      <HintPath>.\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.QRCode, Version=1.0.4778.30637, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="WHC.Pager.Entity">
+      <HintPath>DLL\WHC.Pager.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="WHC.Pager.WinControlEx">
+      <HintPath>DLL\WHC.Pager.WinControlEx.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\CommClass.cs" />
+    <Compile Include="Common\GlobalProperty.cs" />
+    <Compile Include="Common\MD5Encrypt.cs" />
+    <Compile Include="Common\ReadFile.cs" />
+    <Compile Include="Common\SQLhelp.cs" />
+    <Compile Include="CusControl\CTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CusControl\CTextBox.Designer.cs">
+      <DependentUpon>CTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DataOperate.cs" />
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newFormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newFormMain.Designer.cs">
+      <DependentUpon>newFormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="sqlhelp111.cs" />
+    <Compile Include="UI\二维码\DXFormgxgl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\二维码\DXFormgxgl.Designer.cs">
+      <DependentUpon>DXFormgxgl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\二维码\Formerweima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\二维码\Formerweima.Designer.cs">
+      <DependentUpon>Formerweima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\二维码\Formgongshi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\二维码\Formgongshi.Designer.cs">
+      <DependentUpon>Formgongshi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\二维码\FormGXgl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\二维码\FormGXgl.Designer.cs">
+      <DependentUpon>FormGXgl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\二维码\FormjixiujianSaoma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\二维码\FormjixiujianSaoma.Designer.cs">
+      <DependentUpon>FormjixiujianSaoma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\二维码\FormProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\二维码\FormProcess.Designer.cs">
+      <DependentUpon>FormProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\二维码\FormSaoma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\二维码\FormSaoma.Designer.cs">
+      <DependentUpon>FormSaoma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\二维码\Formshijianbiao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\二维码\Formshijianbiao.Designer.cs">
+      <DependentUpon>Formshijianbiao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\人员管理\FormAddPeople.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\人员管理\FormAddPeople.Designer.cs">
+      <DependentUpon>FormAddPeople.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\人员管理\Formchaxuncailiao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\人员管理\Formchaxuncailiao.Designer.cs">
+      <DependentUpon>Formchaxuncailiao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\人员管理\Formchaxunlingjian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\人员管理\Formchaxunlingjian.Designer.cs">
+      <DependentUpon>Formchaxunlingjian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\人员管理\Formchejianrenyuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\人员管理\Formchejianrenyuan.Designer.cs">
+      <DependentUpon>Formchejianrenyuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\人员管理\FormPeople.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\人员管理\FormPeople.Designer.cs">
+      <DependentUpon>FormPeople.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\图纸管理\Formchadan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\图纸管理\Formchadan.Designer.cs">
+      <DependentUpon>Formchadan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\图纸管理\Formjiagongqingkuang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\图纸管理\Formjiagongqingkuang.Designer.cs">
+      <DependentUpon>Formjiagongqingkuang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\图纸管理\Formmingxi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\图纸管理\Formmingxi.Designer.cs">
+      <DependentUpon>Formmingxi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\图纸管理\Formpaichan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\图纸管理\Formpaichan.Designer.cs">
+      <DependentUpon>Formpaichan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\图纸管理\FormPaichanzhuangtai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\图纸管理\FormPaichanzhuangtai.Designer.cs">
+      <DependentUpon>FormPaichanzhuangtai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\图纸管理\Formtongji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\图纸管理\Formtongji.Designer.cs">
+      <DependentUpon>Formtongji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\图纸管理\Formtu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\图纸管理\Formtu.Designer.cs">
+      <DependentUpon>Formtu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\图纸管理\Formtuzhigongyizhuangtai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\图纸管理\Formtuzhigongyizhuangtai.Designer.cs">
+      <DependentUpon>Formtuzhigongyizhuangtai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\图纸管理\FrPresentation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\图纸管理\FrPresentation.Designer.cs">
+      <DependentUpon>FrPresentation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\工序管理\cailiaozhongliang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\工序管理\cailiaozhongliang.Designer.cs">
+      <DependentUpon>cailiaozhongliang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\工序管理\FormAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\工序管理\FormAdd.Designer.cs">
+      <DependentUpon>FormAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\工序管理\FormADDgongxu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\工序管理\FormADDgongxu.Designer.cs">
+      <DependentUpon>FormADDgongxu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\工序管理\FormAddmingchen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\工序管理\FormAddmingchen.Designer.cs">
+      <DependentUpon>FormAddmingchen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\工序管理\Formcharugongxu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\工序管理\Formcharugongxu.Designer.cs">
+      <DependentUpon>Formcharugongxu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\工序管理\FormCharujixiujiangongxu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\工序管理\FormCharujixiujiangongxu.Designer.cs">
+      <DependentUpon>FormCharujixiujiangongxu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\工序管理\FormChaxungongxu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\工序管理\FormChaxungongxu.Designer.cs">
+      <DependentUpon>FormChaxungongxu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\工序管理\FormChengben.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\工序管理\FormChengben.Designer.cs">
+      <DependentUpon>FormChengben.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\工序管理\Formcxgx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\工序管理\Formcxgx.Designer.cs">
+      <DependentUpon>Formcxgx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\工序管理\Formgongdan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\工序管理\Formgongdan.Designer.cs">
+      <DependentUpon>Formgongdan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\工序管理\FormGxgl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\工序管理\FormGxgl.Designer.cs">
+      <DependentUpon>FormGxgl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\工序管理\Formgxsx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\工序管理\Formgxsx.Designer.cs">
+      <DependentUpon>Formgxsx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\工序管理\Formgxwaixie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\工序管理\Formgxwaixie.Designer.cs">
+      <DependentUpon>Formgxwaixie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\工序管理\FormJisuanJiage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\工序管理\FormJisuanJiage.Designer.cs">
+      <DependentUpon>FormJisuanJiage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\工序管理\Formjixiujiantizhigongxu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\工序管理\Formjixiujiantizhigongxu.Designer.cs">
+      <DependentUpon>Formjixiujiantizhigongxu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\工序管理\FormPaigongdan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\工序管理\FormPaigongdan.Designer.cs">
+      <DependentUpon>FormPaigongdan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\工序管理\FormPaigongdanData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\工序管理\FormPaigongdanData.Designer.cs">
+      <DependentUpon>FormPaigongdanData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\工序管理\Formshezhijixiujian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\工序管理\Formshezhijixiujian.Designer.cs">
+      <DependentUpon>Formshezhijixiujian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\工序管理\FormShezhijixiujiangongxu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\工序管理\FormShezhijixiujiangongxu.Designer.cs">
+      <DependentUpon>FormShezhijixiujiangongxu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\工序管理\Formsx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\工序管理\Formsx.Designer.cs">
+      <DependentUpon>Formsx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\工序管理\Formtuzhigongxu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\工序管理\Formtuzhigongxu.Designer.cs">
+      <DependentUpon>Formtuzhigongxu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\工序管理\FormWaixiejixiujian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\工序管理\FormWaixiejixiujian.Designer.cs">
+      <DependentUpon>FormWaixiejixiujian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\工序管理\FormXiangxiJixiu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\工序管理\FormXiangxiJixiu.Designer.cs">
+      <DependentUpon>FormXiangxiJixiu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\工序管理\Formxinzengpaigong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\工序管理\Formxinzengpaigong.Designer.cs">
+      <DependentUpon>Formxinzengpaigong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\查询项目\Formchaxunxiangxi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\查询项目\Formchaxunxiangxi.Designer.cs">
+      <DependentUpon>Formchaxunxiangxi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\查询项目\Formchengpinruku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\查询项目\Formchengpinruku.Designer.cs">
+      <DependentUpon>Formchengpinruku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\查询项目\Formcxxm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\查询项目\Formcxxm.Designer.cs">
+      <DependentUpon>Formcxxm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\查询项目\Formdayinyulan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\查询项目\Formdayinyulan.Designer.cs">
+      <DependentUpon>Formdayinyulan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\查询项目\Formgongyi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\查询项目\Formgongyi.Designer.cs">
+      <DependentUpon>Formgongyi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\查询项目\FormJixiu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\查询项目\FormJixiu.Designer.cs">
+      <DependentUpon>FormJixiu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\查询项目\Formjixiugxgl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\查询项目\Formjixiugxgl.Designer.cs">
+      <DependentUpon>Formjixiugxgl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\查询项目\Formxiangmuzhuangtai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\查询项目\Formxiangmuzhuangtai.Designer.cs">
+      <DependentUpon>Formxiangmuzhuangtai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\查询项目\FormXiangtongtuhao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\查询项目\FormXiangtongtuhao.Designer.cs">
+      <DependentUpon>FormXiangtongtuhao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\查询项目\Formzonglan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\查询项目\Formzonglan.Designer.cs">
+      <DependentUpon>Formzonglan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\检验\Formcaigoushenqing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\检验\Formcaigoushenqing.Designer.cs">
+      <DependentUpon>Formcaigoushenqing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\检验\Formjixiuzujian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\检验\Formjixiuzujian.Designer.cs">
+      <DependentUpon>Formjixiuzujian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\检验\Formjixiuzujianshezhi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\检验\Formjixiuzujianshezhi.Designer.cs">
+      <DependentUpon>Formjixiuzujianshezhi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\检验\Formshebeicailiaoshengou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\检验\Formshebeicailiaoshengou.Designer.cs">
+      <DependentUpon>Formshebeicailiaoshengou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\检验\FormTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\检验\FormTest.Designer.cs">
+      <DependentUpon>FormTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\项目管理\FormAllxiangmu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\项目管理\FormAllxiangmu.Designer.cs">
+      <DependentUpon>FormAllxiangmu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\项目管理\FormChaxunXiangmu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\项目管理\FormChaxunXiangmu.Designer.cs">
+      <DependentUpon>FormChaxunXiangmu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\项目管理\Formfenpici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\项目管理\Formfenpici.Designer.cs">
+      <DependentUpon>Formfenpici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\项目管理\FormJishugenggai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\项目管理\FormJishugenggai.Designer.cs">
+      <DependentUpon>FormJishugenggai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\项目管理\Formribaoshenhe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\项目管理\Formribaoshenhe.Designer.cs">
+      <DependentUpon>Formribaoshenhe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\项目管理\Formshezhigongxu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\项目管理\Formshezhigongxu.Designer.cs">
+      <DependentUpon>Formshezhigongxu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\项目管理\FormShixiang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\项目管理\FormShixiang.Designer.cs">
+      <DependentUpon>FormShixiang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\项目管理\FormSxsj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\项目管理\FormSxsj.Designer.cs">
+      <DependentUpon>FormSxsj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\项目管理\FormXiangmuXiangxi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\项目管理\FormXiangmuXiangxi.Designer.cs">
+      <DependentUpon>FormXiangmuXiangxi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\项目管理\FormXiangMuZongLan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\项目管理\FormXiangMuZongLan.Designer.cs">
+      <DependentUpon>FormXiangMuZongLan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\项目管理\Formxiangxigongxu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\项目管理\Formxiangxigongxu.Designer.cs">
+      <DependentUpon>Formxiangxigongxu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\项目管理\Formxiugairibao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\项目管理\Formxiugairibao.Designer.cs">
+      <DependentUpon>Formxiugairibao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\项目管理\FormZengjiaxiangmu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\项目管理\FormZengjiaxiangmu.Designer.cs">
+      <DependentUpon>FormZengjiaxiangmu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\项目管理\FormZiZhiqingdan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\项目管理\FormZiZhiqingdan.Designer.cs">
+      <DependentUpon>FormZiZhiqingdan.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CusControl\CTextBox.resx">
+      <DependentUpon>CTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newFormMain.resx">
+      <DependentUpon>newFormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\二维码\DXFormgxgl.resx">
+      <DependentUpon>DXFormgxgl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\二维码\Formerweima.resx">
+      <DependentUpon>Formerweima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\二维码\Formgongshi.resx">
+      <DependentUpon>Formgongshi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\二维码\FormGXgl.resx">
+      <DependentUpon>FormGXgl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\二维码\FormjixiujianSaoma.resx">
+      <DependentUpon>FormjixiujianSaoma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\二维码\FormProcess.resx">
+      <DependentUpon>FormProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\二维码\FormSaoma.resx">
+      <DependentUpon>FormSaoma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\二维码\Formshijianbiao.resx">
+      <DependentUpon>Formshijianbiao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\人员管理\FormAddPeople.resx">
+      <DependentUpon>FormAddPeople.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\人员管理\Formchaxuncailiao.resx">
+      <DependentUpon>Formchaxuncailiao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\人员管理\Formchaxunlingjian.resx">
+      <DependentUpon>Formchaxunlingjian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\人员管理\Formchejianrenyuan.resx">
+      <DependentUpon>Formchejianrenyuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\人员管理\FormPeople.resx">
+      <DependentUpon>FormPeople.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\图纸管理\Formchadan.resx">
+      <DependentUpon>Formchadan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\图纸管理\Formjiagongqingkuang.resx">
+      <DependentUpon>Formjiagongqingkuang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\图纸管理\Formmingxi.resx">
+      <DependentUpon>Formmingxi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\图纸管理\Formpaichan.resx">
+      <DependentUpon>Formpaichan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\图纸管理\FormPaichanzhuangtai.resx">
+      <DependentUpon>FormPaichanzhuangtai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\图纸管理\Formtongji.resx">
+      <DependentUpon>Formtongji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\图纸管理\Formtu.resx">
+      <DependentUpon>Formtu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\图纸管理\Formtuzhigongyizhuangtai.resx">
+      <DependentUpon>Formtuzhigongyizhuangtai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\图纸管理\FrPresentation.resx">
+      <DependentUpon>FrPresentation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\工序管理\cailiaozhongliang.resx">
+      <DependentUpon>cailiaozhongliang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\工序管理\FormAdd.resx">
+      <DependentUpon>FormAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\工序管理\FormADDgongxu.resx">
+      <DependentUpon>FormADDgongxu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\工序管理\FormAddmingchen.resx">
+      <DependentUpon>FormAddmingchen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\工序管理\Formcharugongxu.resx">
+      <DependentUpon>Formcharugongxu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\工序管理\FormCharujixiujiangongxu.resx">
+      <DependentUpon>FormCharujixiujiangongxu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\工序管理\FormChaxungongxu.resx">
+      <DependentUpon>FormChaxungongxu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\工序管理\FormChengben.resx">
+      <DependentUpon>FormChengben.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\工序管理\Formcxgx.resx">
+      <DependentUpon>Formcxgx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\工序管理\Formgongdan.resx">
+      <DependentUpon>Formgongdan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\工序管理\FormGxgl.resx">
+      <DependentUpon>FormGxgl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\工序管理\Formgxsx.resx">
+      <DependentUpon>Formgxsx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\工序管理\Formgxwaixie.resx">
+      <DependentUpon>Formgxwaixie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\工序管理\FormJisuanJiage.resx">
+      <DependentUpon>FormJisuanJiage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\工序管理\Formjixiujiantizhigongxu.resx">
+      <DependentUpon>Formjixiujiantizhigongxu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\工序管理\FormPaigongdan.resx">
+      <DependentUpon>FormPaigongdan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\工序管理\FormPaigongdanData.resx">
+      <DependentUpon>FormPaigongdanData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\工序管理\Formshezhijixiujian.resx">
+      <DependentUpon>Formshezhijixiujian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\工序管理\FormShezhijixiujiangongxu.resx">
+      <DependentUpon>FormShezhijixiujiangongxu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\工序管理\Formsx.resx">
+      <DependentUpon>Formsx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\工序管理\Formtuzhigongxu.resx">
+      <DependentUpon>Formtuzhigongxu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\工序管理\FormWaixiejixiujian.resx">
+      <DependentUpon>FormWaixiejixiujian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\工序管理\FormXiangxiJixiu.resx">
+      <DependentUpon>FormXiangxiJixiu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\工序管理\Formxinzengpaigong.resx">
+      <DependentUpon>Formxinzengpaigong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\查询项目\Formchaxunxiangxi.resx">
+      <DependentUpon>Formchaxunxiangxi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\查询项目\Formchengpinruku.resx">
+      <DependentUpon>Formchengpinruku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\查询项目\Formcxxm.resx">
+      <DependentUpon>Formcxxm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\查询项目\Formdayinyulan.resx">
+      <DependentUpon>Formdayinyulan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\查询项目\Formgongyi.resx">
+      <DependentUpon>Formgongyi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\查询项目\FormJixiu.resx">
+      <DependentUpon>FormJixiu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\查询项目\Formjixiugxgl.resx">
+      <DependentUpon>Formjixiugxgl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\查询项目\Formxiangmuzhuangtai.resx">
+      <DependentUpon>Formxiangmuzhuangtai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\查询项目\FormXiangtongtuhao.resx">
+      <DependentUpon>FormXiangtongtuhao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\查询项目\Formzonglan.resx">
+      <DependentUpon>Formzonglan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\检验\Formcaigoushenqing.resx">
+      <DependentUpon>Formcaigoushenqing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\检验\Formjixiuzujian.resx">
+      <DependentUpon>Formjixiuzujian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\检验\Formjixiuzujianshezhi.resx">
+      <DependentUpon>Formjixiuzujianshezhi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\检验\Formshebeicailiaoshengou.resx">
+      <DependentUpon>Formshebeicailiaoshengou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\检验\FormTest.resx">
+      <DependentUpon>FormTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\项目管理\FormAllxiangmu.resx">
+      <DependentUpon>FormAllxiangmu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\项目管理\FormChaxunXiangmu.resx">
+      <DependentUpon>FormChaxunXiangmu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\项目管理\Formfenpici.resx">
+      <DependentUpon>Formfenpici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\项目管理\FormJishugenggai.resx">
+      <DependentUpon>FormJishugenggai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\项目管理\Formribaoshenhe.resx">
+      <DependentUpon>Formribaoshenhe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\项目管理\Formshezhigongxu.resx">
+      <DependentUpon>Formshezhigongxu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\项目管理\FormShixiang.resx">
+      <DependentUpon>FormShixiang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\项目管理\FormSxsj.resx">
+      <DependentUpon>FormSxsj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\项目管理\FormXiangmuXiangxi.resx">
+      <DependentUpon>FormXiangmuXiangxi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\项目管理\FormXiangMuZongLan.resx">
+      <DependentUpon>FormXiangMuZongLan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\项目管理\Formxiangxigongxu.resx">
+      <DependentUpon>Formxiangxigongxu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\项目管理\Formxiugairibao.resx">
+      <DependentUpon>Formxiugairibao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\项目管理\FormZengjiaxiangmu.resx">
+      <DependentUpon>FormZengjiaxiangmu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\项目管理\FormZiZhiqingdan.resx">
+      <DependentUpon>FormZiZhiqingdan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\182\png\32\ApplicationsFolder_32x32.png" />
+    <None Include="Images\182\png\32\BurnableFolder_32x32.png" />
+    <None Include="Images\182\png\32\DesktopFolder_32x32.png" />
+    <None Include="Images\182\png\32\DeveloperFolder_32x32.png" />
+    <None Include="Images\182\png\32\Documents_32x32.png" />
+    <None Include="Images\182\png\32\DownloadsFolder_32x32.png" />
+    <None Include="Images\182\png\32\GenericShareFolder_32x32.png" />
+    <None Include="Images\182\png\32\GroupFolder_32x32.png" />
+    <None Include="Images\182\png\32\LibraryFolder_32x32.png" />
+    <None Include="Images\182\png\32\MovieFolder_32x32.png" />
+    <None Include="Images\182\png\32\MusicFolder_32x32.png" />
+    <None Include="Images\182\png\32\Pictures_32x32.png" />
+    <None Include="Images\182\png\32\PublicFolder_32x32.png" />
+    <None Include="Images\182\png\32\SitesFolder_32x32.png" />
+    <None Include="Images\182\png\32\SmartFolder_32x32.png" />
+    <None Include="Images\182\png\32\SystemFolder_32x32.png" />
+    <None Include="Images\182\png\32\UsersFolder_32x32.png" />
+    <None Include="Images\182\png\32\Utilitiesfolder_32x32.png" />
+    <Content Include="Images\add.ico" />
+    <Content Include="Images\btnfind.ico" />
+    <Content Include="Images\cancel.ico" />
+    <Content Include="Images\change.ico" />
+    <Content Include="Images\CLAIM.ICO" />
+    <Content Include="Images\close.ico" />
+    <Content Include="Images\delete.ico" />
+    <Content Include="Images\export.ico" />
+    <Content Include="Images\find.ico" />
+    <None Include="Images\ico\h1.png" />
+    <None Include="Images\ico\h4.png" />
+    <None Include="Images\ico\h13.png" />
+    <None Include="Images\ico\h14.png" />
+    <None Include="Images\ico\g18.png" />
+    <None Include="Images\ico\h7.png" />
+    <None Include="Images\ico\h5.png" />
+    <None Include="Images\ico\g8.png" />
+    <None Include="Images\ico\9.png" />
+    <None Include="Images\ico\4.png" />
+    <None Include="Images\ico\1.png" />
+    <None Include="Images\ico\ztt.ico" />
+    <Content Include="Images\open.ico" />
+    <Content Include="Images\print.ico" />
+    <Content Include="Images\Query.ico" />
+    <Content Include="Images\refulsh.ico" />
+    <Content Include="Images\stop.ico" />
+    <Content Include="Images\UNCLAIM.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\all-flat-icons-by-mahm0udwally\" />
+    <Folder Include="Images\blueberry\" />
+    <Folder Include="Images\BS\" />
+    <Folder Include="Images\CU\" />
+    <Folder Include="Images\cxtbsc32_veryhuo.com\" />
+    <Folder Include="Images\FI\" />
+    <Folder Include="Images\gear\" />
+    <Folder Include="Images\OT\" />
+    <Folder Include="Images\PR\" />
+    <Folder Include="Images\PU\" />
+    <Folder Include="Images\raster-32x32\" />
+    <Folder Include="Images\RP\" />
+    <Folder Include="Images\SE\" />
+    <Folder Include="Images\ST\" />
+    <Folder Include="Images\SY\" />
+    <Folder Include="Images\素材\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\jiagou\WindowsFormsApplication2\jiagou.csproj">
+      <Project>{2a3011eb-37a0-4291-a6e5-fa534c9ebde4}</Project>
+      <Name>jiagou</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\xiangmuguanli\项目管理系统.csproj">
+      <Project>{1493c6a5-0358-4220-bf91-c05cb4695f71}</Project>
+      <Name>项目管理系统</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

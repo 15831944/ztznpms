@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <configSections>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="ztznpms.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/>
+    </startup>
+  <connectionStrings>
+    <add name="mysqlserver" connectionString="Data Source=10.15.1.252;Initial Catalog=db_ShengChanBu;user id=sa;password=zttZTT123" />
+    <add name="ztznpms.Properties.Settings.db_ShengChanBuConnectionString"
+      connectionString="Data Source=10.15.1.252;Initial Catalog=db_ShengChanBu;Persist Security Info=True;User ID=sa"
+      providerName="System.Data.SqlClient" />
+  </connectionStrings>
+  <userSettings>
+    <ztznpms.Properties.Settings>
+      <setting name="id" serializeAs="String">
+        <value>id</value>
+      </setting>
+      <setting name="项目名称" serializeAs="String">
+        <value>项目名称</value>
+      </setting>
+      <setting name="工作令号" serializeAs="String">
+        <value>工作令号</value>
+      </setting>
+      <setting name="设备名称" serializeAs="String">
+        <value>设备名称</value>
+      </setting>
+      <setting name="编码" serializeAs="String">
+        <value>编码</value>
+      </setting>
+      <setting name="图号" serializeAs="String">
+        <value>图号</value>
+      </setting>
+      <setting name="名称" serializeAs="String">
+        <value>名称</value>
+      </setting>
+      <setting name="设备编号" serializeAs="String">
+        <value>设备编号</value>
+      </setting>
+      <setting name="数量" serializeAs="String">
+        <value>数量</value>
+      </setting>
+      <setting name="工序名称" serializeAs="String">
+        <value>工序名称</value>
+      </setting>
+      <setting name="价格" serializeAs="String">
+        <value>价格</value>
+      </setting>
+      <setting name="工序顺序" serializeAs="String">
+        <value>工序顺序</value>
+      </setting>
+      <setting name="工序内容" serializeAs="String">
+        <value>工序内容</value>
+      </setting>
+      <setting name="负责人" serializeAs="String">
+        <value>负责人</value>
+      </setting>
+      <setting name="实际操作人" serializeAs="String">
+        <value>实际操作人</value>
+      </setting>
+      <setting name="开始时间" serializeAs="String">
+        <value>开始时间</value>
+      </setting>
+      <setting name="结束时间" serializeAs="String">
+        <value>结束时间</value>
+      </setting>
+      <setting name="工序外协开始" serializeAs="String">
+        <value>工序外协开始</value>
+      </setting>
+      <setting name="工序外协结束" serializeAs="String">
+        <value>工序外协结束</value>
+      </setting>
+      <setting name="二维码" serializeAs="String">
+        <value>二维码</value>
+      </setting>
+      <setting name="标记" serializeAs="String">
+        <value>标记</value>
+      </setting>
+    </ztznpms.Properties.Settings>
+  </userSettings>
+</configuration>

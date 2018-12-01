@@ -1,0 +1,77 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ztznpms.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="id" Type="System.String" Scope="User">
+      <Value Profile="(Default)">id</Value>
+    </Setting>
+    <Setting Name="项目名称" Type="System.String" Scope="User">
+      <Value Profile="(Default)">项目名称</Value>
+    </Setting>
+    <Setting Name="工作令号" Type="System.String" Scope="User">
+      <Value Profile="(Default)">工作令号</Value>
+    </Setting>
+    <Setting Name="设备名称" Type="System.String" Scope="User">
+      <Value Profile="(Default)">设备名称</Value>
+    </Setting>
+    <Setting Name="编码" Type="System.String" Scope="User">
+      <Value Profile="(Default)">编码</Value>
+    </Setting>
+    <Setting Name="图号" Type="System.String" Scope="User">
+      <Value Profile="(Default)">图号</Value>
+    </Setting>
+    <Setting Name="名称" Type="System.String" Scope="User">
+      <Value Profile="(Default)">名称</Value>
+    </Setting>
+    <Setting Name="设备编号" Type="System.String" Scope="User">
+      <Value Profile="(Default)">设备编号</Value>
+    </Setting>
+    <Setting Name="数量" Type="System.String" Scope="User">
+      <Value Profile="(Default)">数量</Value>
+    </Setting>
+    <Setting Name="工序名称" Type="System.String" Scope="User">
+      <Value Profile="(Default)">工序名称</Value>
+    </Setting>
+    <Setting Name="价格" Type="System.String" Scope="User">
+      <Value Profile="(Default)">价格</Value>
+    </Setting>
+    <Setting Name="工序顺序" Type="System.String" Scope="User">
+      <Value Profile="(Default)">工序顺序</Value>
+    </Setting>
+    <Setting Name="工序内容" Type="System.String" Scope="User">
+      <Value Profile="(Default)">工序内容</Value>
+    </Setting>
+    <Setting Name="负责人" Type="System.String" Scope="User">
+      <Value Profile="(Default)">负责人</Value>
+    </Setting>
+    <Setting Name="实际操作人" Type="System.String" Scope="User">
+      <Value Profile="(Default)">实际操作人</Value>
+    </Setting>
+    <Setting Name="开始时间" Type="System.String" Scope="User">
+      <Value Profile="(Default)">开始时间</Value>
+    </Setting>
+    <Setting Name="结束时间" Type="System.String" Scope="User">
+      <Value Profile="(Default)">结束时间</Value>
+    </Setting>
+    <Setting Name="工序外协开始" Type="System.String" Scope="User">
+      <Value Profile="(Default)">工序外协开始</Value>
+    </Setting>
+    <Setting Name="工序外协结束" Type="System.String" Scope="User">
+      <Value Profile="(Default)">工序外协结束</Value>
+    </Setting>
+    <Setting Name="二维码" Type="System.String" Scope="User">
+      <Value Profile="(Default)">二维码</Value>
+    </Setting>
+    <Setting Name="标记" Type="System.String" Scope="User">
+      <Value Profile="(Default)">标记</Value>
+    </Setting>
+    <Setting Name="db_ShengChanBuConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=10.15.1.252;Initial Catalog=db_ShengChanBu;Persist Security Info=True;User ID=sa&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=10.15.1.252;Initial Catalog=db_ShengChanBu;Persist Security Info=True;User ID=sa</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
